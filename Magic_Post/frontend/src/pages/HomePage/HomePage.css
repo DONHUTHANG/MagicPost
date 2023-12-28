@@ -1,0 +1,46 @@
+.home_container {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  margin-top: 100px;
+}
+
+.home_side {
+  display: flex;
+  transition: transform 3s ease-in-out;
+
+}
+
+.home1, .home2, .home3 {
+  width: 100vw;
+  height: calc(600px);
+  border-bottom: 10px solid #00CC33;
+}
+
+.home1 img, .home2 img, .home3 img {
+  width: 100vw;
+  height: 600px;
+  object-fit: cover;
+}
+
+
+/* Mobile styles */
+@media (max-width: 991px) {
+  .home1 img,
+  .home2 img,
+  .home3 img {
+    object-fit: unset;
+  }
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  .home1 img,
+  .home2 img,
+  .home3 img {
+    object-fit: unset;
+  }
+
+}
+
+

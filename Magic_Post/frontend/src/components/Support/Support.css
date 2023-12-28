@@ -1,0 +1,225 @@
+.support-container {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    width: 80%;
+    margin: auto;
+}
+
+.support-container .support-box-1 {
+    padding: 40px;
+    flex-basis: 50%;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    background-color: #f2f2f2;
+    
+}
+
+.support-container .support-box-input {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+}
+
+
+.support-container .support-box-btn {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 250px;
+    min-height: 50px;
+    /* background-color: #00CC33; */
+}
+
+.support-container .support-box-btn .support-button {
+    background-color: #00CC33;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.support-container .support-box-input span {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.support-container .support-box-input .text-red {
+    color: red;
+    margin-left: 5px;
+}
+
+.support-container .support-box-input input {
+    min-height: 56px;
+    padding: 0 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    font-size: 100%;
+    font-weight: 250;
+}
+
+.support-container .support-box-input textarea {
+    min-height: 110px;
+    padding: 0px 20px;
+    padding-top: 16px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 250;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    resize: vertical;
+    font-family: inherit;
+}
+
+.support-container .support-box-1 h1 {
+    font-size: 46px;
+    text-align: left;
+    margin-top: 20px;
+    color: #161D25;
+}
+
+.support-container .support-box-1 p {
+    margin: 16px 0 32px;
+    color: rgba(69, 69, 91, 0.9);
+    font-size: 18px;
+}
+
+.support-container .support-box-2 {
+    padding: 40px;
+    background-color: #2e2e31;
+    flex-basis: 50%;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.support-container .support-box-2 .support-sec {
+    margin-bottom: 28px;
+}
+
+.support-container .support-box-2 .connect-support-title {
+    margin-top: 12px 0px 12px;
+    font-size: 46px;
+    color: #fff;
+}
+
+
+.support-container .support-box-2 span {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.support-container .support-box-2 .support-sec-name {
+    margin-left: 20px;
+    font-weight: 300;
+}
+
+ 
+.support-container .support-box-2 .support-sec a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+
+.support-container .support-box-2 .support-sec .support-sec-desc {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 35px;
+}
+
+.support-container .support-box-2 .support-img h1 {
+    font-size: 30px;
+    color: #fff;
+    margin-left: 30px;
+}
+
+.support-container .support-box-2 .support-img .support-sci {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.support-container .support-box-2 .support-img .support-sci li {
+    list-style: none;
+}
+
+.support-container .support-box-2 .support-img .support-sci li a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.support-container .support-box-2 .support-img .support-sci .icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.support-container .support-box-2 .support-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* .support-container .support-box-2 .support-logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+} */
+
+.support-container .support-box-2 .support-logo h3 {
+    font-size: 36px;
+    color: rgb(9, 9, 245);
+    margin-left: 20px;
+}
+
+
+@media (max-width: 991px) {
+    .support-container {
+        flex-direction: column;
+    }
+
+    .support-container .support-box-1 h1,
+    .support-container .support-box-2 .connect-support-title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .support-container .support-box-input input {
+        min-height: 40px;
+    }
+
+    .support-container .support-box-input textarea {
+        min-height: 80px;
+    }
+
+    .support-container .support-box-input span {
+        font-size: 18px;
+    }
+
+    .support-container .support-box-1 {
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .support-container .support-box-2 {
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+        border-top-right-radius: 0px;
+    }
+
+    .support-container .support-box-2 span, 
+    .support-container .support-box-2 .support-sec .support-sec-desc {
+        font-size: 18px;
+    }
+}

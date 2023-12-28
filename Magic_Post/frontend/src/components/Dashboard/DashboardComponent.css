@@ -1,0 +1,100 @@
+.dashboard-content {
+    background-color: #fff;
+    margin: 0 20px 20px 40px;
+    height: 100vh;
+    padding: 20px;
+    border-radius: 10px;
+}
+.box-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    margin: 40px 20px 20px 20px;
+    align-items: center;
+    /* width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    background: #ebebeb; */
+}
+
+.quantity-shipped {
+    width: 280px;
+    height: 120px;
+    border-radius: 10px;
+    padding: 5px;
+    background-image: linear-gradient(to right, #00b4db, #0083b0);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.quantity-transit {
+    width: 280px;
+    height: 120px;
+    border-radius: 10px;
+    padding: 5px;
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.quantity-still-instock {
+    width: 280px;
+    height: 120px;
+    border-radius: 10px;
+    padding: 5px;
+    background-image: linear-gradient(to right, #00b09b, #96c93d);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.quantity-arrive-instock {
+    width: 280px;
+    height: 120px;
+    border-radius: 10px;
+    padding: 5px;
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.box-container .icon-box {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-right: 10px;
+    float: right;
+    border-radius: 5px;
+    background-color: #eaeaea;
+}
+
+.quantity-shipped-content > h3,
+.quantity-transit-content > h3,
+.quantity-still-instock-content > h3,
+.quantity-arrive-instock-content > h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.quantity-shipped-content > p,
+.quantity-transit-content > p,
+.quantity-still-instock-content > p,
+.quantity-arrive-instock-content > p 
+{
+    font-weight: bold;
+    font-size: 24px;
+    margin: auto;
+    color: #fff;
+}
+
+@media (max-width: 991px)
+{
+    .box-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 771px)
+{
+
+}

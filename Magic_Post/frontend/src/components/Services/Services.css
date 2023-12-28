@@ -1,0 +1,123 @@
+.services-container {
+    width: 90%;
+    border-radius: 35px;
+    height: 120vh;
+    background-image: linear-gradient(to right, #00b09b, #96c93d);
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 140px;
+}
+
+.services-container .services-heading {
+    margin-top: 40px;
+    text-align: center;
+    color: #121619;
+    font-size: 40px;
+}
+
+.services-container .services-options {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    height: fit-content;
+    margin-top: 40px;
+}
+
+.services-container .option {
+    border-radius: 35px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, rgb(195, 252, 191), rgb(161, 255, 193));
+
+}
+
+.services-container .option img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.services-container .option h2 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.services-container .option p {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 16px;
+    margin-top: 0px;
+}
+
+.services-container .option .see-more {
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: #D63C32;
+    font-weight: 600;
+} 
+ 
+
+.services-container .option:hover {
+    animation: moveUp 0.5s infinite;
+}
+
+
+.services-container .service-express {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width: 991px) {
+    .services-container {
+        height: 160vh;
+    }
+
+    .services-container .services-heading {
+        font-size: 35px;
+    }
+    .services-container .services-options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        height: 230vh;
+    }
+
+    .services-container .services-heading {
+        font-size: 28px;
+    }
+
+    .services-container .services-options {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services-container .service-express {
+        object-fit: unset;
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+

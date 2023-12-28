@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.header .header-text {
+    text-align: center;
+}
+
+.header .title {
+    color: 	#00CC33;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.header .sub-title {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.bill-code {
+    width: 70%;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: #e0e3e7;
+    justify-content: center;
+    box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.45);
+    margin: auto;
+}
+
+.bill-code label {
+    display: block;
+    color: #000;
+    font-weight: 650;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.bill-code input {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #f5f5f5;
+    padding: 16px;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.bill-code input:focus {
+    border: 2px solid #1b7c00;
+}
+
+.bill-code .bill-code-title {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.btn-search {
+    display: flex;
+    padding: 15px 30px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 650;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #00CC33;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.btn-search:hover {
+    background-color: #1b7c00;
+    scale: 1.05;
+}

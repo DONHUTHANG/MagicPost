@@ -1,0 +1,377 @@
+.profile-container {
+  display: flex;
+  /* margin-left: 20px; */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 20px 20px 40px;
+}
+
+.profile-sidebar {
+  flex: 1;
+  list-style: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  padding-right: 30px;
+  border-right: 1px solid #e2e2e2;
+}
+    
+.profile-usermenu {
+  margin-top: 40px;
+  margin-left: -40px;
+}
+
+.profile-usermenu ul li {
+  list-style: none;
+  padding: 10px 10px 15px 0;
+  width: 100%;
+}
+
+.profile-usermenu ul li a {
+  color: #4E5155;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  width: 100%;
+  color: #5b9bd1;
+  background-color: #f8f8f8;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f9f9f9;
+  border-left: 4px solid #1a80d3;
+  width: 100%;
+}
+
+.profile-content {
+  padding-left: 30px;
+  background: #ffffff;
+  min-height: 460px;
+  flex: 3;
+}
+
+.profile-userpic {
+  width: 100px;
+  position: relative;
+}
+
+.profile-userpic img {
+  border-radius: 50%;
+  border: 6px solid #eaeaea;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.profile-userpic .round {
+  position: absolute;
+  bottom: -14px;
+  right: 24px;
+  transform: translate(50%, -50%);
+  background: #f8f8f8;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-userpic .round input[type="file"] {
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+}
+
+.profile-container input[type="file"]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+.profile-user {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.profile-userpic { 
+  margin-right: 15px;
+}
+
+.profile-usertitle-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.profile-usertitle-role {
+  font-size: 15px;
+  color: #93a3b5;
+  margin-left: 10px;
+}
+
+.profile-userinfo {
+  margin-top: 30px;
+}
+
+.profile-userinfo hr {
+  width: 100%;
+  margin-right: 0;
+}
+
+.profile-userinfo-item {
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.profile-userinfo-item i {
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+
+.personinfo-headerText {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.profile-content-form-item {
+  display: flex;
+}
+
+.profile-container .form-item {
+  display: flex;
+}
+
+.profile-container .form-item-first {
+  margin-right: 20px;
+}
+
+
+/* PersonInfo */
+.personinfo-container {
+  display: flex;
+  flex-direction: row;
+  /* grid-template-rows: repeat(2, 1fr); */
+
+}
+
+.personinfo-container-form {
+  display: flex;
+  flex-direction: row;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 100px;
+}
+
+.personinfo-container-left {
+  width: 350px;
+}
+
+.personinfo-container-right {
+  width: 350px;
+  margin-top: 20px;
+}
+
+.personinfo-container-left .input-container {
+  margin-bottom: 8px;
+}
+
+.personinfo-container-right .input-container {
+  margin-bottom: 18px;
+}
+
+
+
+.personinfo-headerText {
+  font-size: 28px;
+  padding-bottom: 20px;
+} 
+
+.input-container-flex {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+
+.personinfo-container textarea {
+  margin-bottom: 15px;
+}
+
+/* .personinfo-container .top-border {
+  padding-right: 20px;
+  border-right: 1px solid #e2e2e2;
+} */
+
+.personinfo-container .gender {
+  align-items: center;
+}
+
+
+.personinfo-container .gender-title {
+  padding-right: 50px;
+}
+
+.personinfo-container h2 {
+  margin-bottom: 10px;
+}
+
+.personinfo-container .form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+.personinfo-container .input-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.personinfo-container label {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.personinfo-container input[type="text"],
+.personinfo-container textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.personinfo-container input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.personinfo-container input[disabled],
+.personinfo-container textarea[disabled] {
+  background-color: #f2f2f2;
+}
+
+.profile-container .end-distance textarea{
+  min-height: 100px;
+}
+
+.personinfo-container .success-message {
+  color: #22B0DC;
+  margin-top: 10px;
+}
+
+.personinfo-container .button-container {
+  margin-top: 10px;
+  display: flex;
+}
+
+
+.personinfo-container button:focus {
+  outline: none;
+}
+
+.personinfo-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.personinfo-container .checkbox-gender {
+  display: flex;
+}
+
+.personinfo-container .checkbox-gender label {
+  display: flex;
+  margin-right: 8px;
+
+}
+
+
+
+.app-content-headerButton-u {
+  background-color: #22B0DC;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  border-radius: 4px;
+  height: 32px;
+  padding: 0 16px;
+  transition: .2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.app-content-headerButton-c {
+  margin-left: 10px;
+  background-color: #f8f8f8;
+  color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  border-radius: 4px;
+  height: 32px;
+  padding: 0 36px;
+  transition: .2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.personinfo-container .input-disabled {
+  position: relative;
+}
+
+.personinfo-container .input-disabled::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.personinfo-container .input-disabled:hover::after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .form-row {
+    display: block;
+  }
+
+  .input-container {
+    display: block;
+  }
+
+  .input-container-flex {
+    display: block;
+  }
+}
